@@ -1,8 +1,8 @@
 # Grok Bots 个人备份 / Personal backup
 
-小呼的 Grok Bot 工作流备份（轻量脱敏公开版）。本机运行中的 Bot 不受影响，只有这份 GitHub 副本用了占位符。
+小呼的 Grok Bot 工作流备份（轻量脱敏版）。本机运行中的 Bot 不受影响，只有这份 GitHub 副本用了占位符。
 
-Light-redacted public backup of 小呼's Grok Bot fleet. Live bots are unchanged; only this GitHub copy uses placeholders.
+Light-redacted backup of 小呼's Grok Bot fleet. Live bots are unchanged; only this GitHub copy uses placeholders.
 
 **备份日期 / Backup date:** 2026-11-01（Asia/Shanghai）
 
@@ -30,6 +30,10 @@ Real values are kept privately by Grok Bot, not in this repo, and can be restore
 
 ## 说明 / Notes
 
-本仓库不含 API Key、密码、保险库导出或学生信息；系统自带 Cursor 技能不在此备份。
+本仓库不含 API Key、密码、保险库导出或其他信息；系统自带 Cursor 技能不在此备份。
 
-No API keys, passwords, vault exports, or student data. Cursor-managed skills are omitted on purpose.
+No API keys, passwords, vault exports, or other data. Cursor-managed skills are omitted on purpose.
+
+<img width="1128" height="785" alt="抱你！" src="https://github.com/user-attachments/assets/5c7437c2-b3c4-4b13-8287-117a72f83261" />
+
+**<p align="center">谢谢你！</p>**
