@@ -1,17 +1,11 @@
-# Grok Bot custom skills backup
+# Grok Bots 个人备份 / Personal backup
 
-Private backup of 小呼's Grok Bot custom skills as of 2026-11-01 (Asia/Shanghai).
+私有工作流备份（小呼 · Asia/Shanghai），截至打包日写入。含：
 
-这是 小呼 的 Grok Bot 自定义技能私有备份，截止时间 2026-11-01（Asia/Shanghai）。
+- `bots/`：六个 Bot 的 profile 与头像
+- `skills/`：共享自建技能（含取卷脚本等）
+- `routines/`：Grok Bot 定时例程说明
 
-Not for public reuse of secrets. Do not copy, publish, or reuse credentials or private material from these files.
+请勿公开密钥；本仓库不含 API Key。系统自带 Cursor 技能不在此备份。
 
-请勿公开复用其中的密钥或私密内容。不要复制、公开或挪用这些文件里的凭证与私人材料。
-
-## Skills
-
-- `skills/call-deepseek-bot/`
-- `skills/onedrive-ima-add-only-sync/`
-- `skills/skill-1793456253734/`
-- `skills/skill-1793518670469/`
-- `skills/skill-1793521057884/`
+Private backup of 小呼's Grok Bot fleet. No API keys. Cursor-managed skills are omitted on purpose.
