@@ -9,3 +9,5 @@
 请勿公开密钥；本仓库不含 API Key。系统自带 Cursor 技能不在此备份。
 
 Private backup of 小呼's Grok Bot fleet. No API keys. Cursor-managed skills are omitted on purpose.
+
+<img width="1504" height="1046" alt="HVvBrhibwAAbRSy" src="https://github.com/user-attachments/assets/afe0e543-af20-4e31-ae1b-6a483a6054f2" />
