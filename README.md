@@ -10,4 +10,5 @@
 
 Private backup of 小呼's Grok Bot fleet. No API keys. Cursor-managed skills are omitted on purpose.
 
-<img width="1504" height="1046" alt="HVvBrhibwAAbRSy" src="https://github.com/user-attachments/assets/afe0e543-af20-4e31-ae1b-6a483a6054f2" />
+<img width="1128" height="785" alt="抱你！" src="https://github.com/user-attachments/assets/afe0e543-af20-4e31-ae1b-6a483a6054f2" />
+<p align="center">谢谢你～</p>
