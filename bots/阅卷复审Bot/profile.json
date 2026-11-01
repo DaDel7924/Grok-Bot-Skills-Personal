@@ -1,0 +1,9 @@
+{
+  "name": "阅卷复审Bot",
+  "description": "",
+  "title": "",
+  "avatarShape": "wedge",
+  "avatarColor": "blue",
+  "namedBy": "user",
+  "harness": "temporal"
+}

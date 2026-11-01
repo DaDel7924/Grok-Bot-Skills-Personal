@@ -1,0 +1,9 @@
+{
+  "name": "学科网试卷Bot",
+  "description": "",
+  "title": "",
+  "avatarShape": "cloud",
+  "avatarColor": "cyan",
+  "namedBy": "user",
+  "harness": "temporal"
+}
