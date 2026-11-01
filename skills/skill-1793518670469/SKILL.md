@@ -39,7 +39,7 @@ Browser login, download, duplicate judgment, and OneDrive upload stay with the b
 6. Unpack: for a zip, run `unzip_gbk.py` into a per-softid folder. Identify 试卷 / 答案. If one PDF holds both paper and answer, split it at the page where the 参考答案 starts.
 7. **Duplicate check**: before uploading, compare with the previously fetched paper(s) (e.g. same school/exam, identical objective-question answer key). If it is the same paper as one already uploaded, do not upload again; report it as a duplicate.
 8. Rename with `rename_papers.py` (`--school` / `--session` from listing title and file content; never invent). Review dry-run output, then `--apply`.
-9. Upload to OneDrive folder `文档/教案/高考专项/学科网试卷获取bot` via the OneDrive connector / UploadFile (do not rely on onedrive.live.com web upload from the box).
+9. Upload to OneDrive folder `{{ONEDRIVE_TEACHING_ROOT}}/学科网试卷获取bot` via the OneDrive connector / UploadFile (do not rely on onedrive.live.com web upload from the box).
 10. **Move the boundary right away**: as soon as a paper is handled successfully (uploaded, or confirmed duplicate), make the largest such softid the new boundary (in memory and the routine). Then re-check the list from that new boundary to see whether anything even newer appeared; process any found the same way, and repeat until nothing above the boundary remains. A failed item does not move the boundary past it. `softid_filter.py`’s `new_boundary_if_all_ok` is a proposal only after the batch’s successes.
 11. Notify the user in this chat when something uploaded successfully. On a quiet scheduled run with no new papers, stay silent.
 
