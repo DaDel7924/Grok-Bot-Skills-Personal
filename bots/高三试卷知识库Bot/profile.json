@@ -1,0 +1,9 @@
+{
+  "name": "高三试卷知识库Bot",
+  "description": "",
+  "title": "",
+  "avatarShape": "flower",
+  "avatarColor": "blue",
+  "namedBy": "user",
+  "harness": "temporal"
+}
