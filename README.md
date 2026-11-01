@@ -1,25 +1,33 @@
-# Grok Bot fleet backup (light-redacted)
+# Grok Bots 个人备份 / Personal backup
 
-Public mirror of profiles, avatars, custom skills, and routine docs.
-**Live bots on the box are unchanged**; only this GitHub copy uses placeholders.
+小呼的 Grok Bot 工作流备份（轻量脱敏公开版）。本机运行中的 Bot 不受影响，只有这份 GitHub 副本用了占位符。
 
-## Placeholders
-Restore values from your private notes / Grok Bot memory (not stored in this repo):
+Light-redacted public backup of 小呼's Grok Bot fleet. Live bots are unchanged; only this GitHub copy uses placeholders.
 
-| Placeholder | Meaning |
+## 内容 / Contents
+
+- `bots/`：六个 Bot 的 profile 与头像 / six bot profiles + avatars
+- `skills/`：共享自建技能（含取卷脚本等）/ custom shared skills (incl. helper scripts)
+- `routines/`：Grok Bot 定时例程说明 / scheduled routine descriptions
+
+## 占位符 / Placeholders
+
+真实值不在本仓库，由 Grok Bot 在本机保管，需要时可还原。
+Real values are kept privately by Grok Bot, not in this repo, and can be restored when needed.
+
+| 占位符 / Placeholder | 含义 / Meaning |
 |---|---|
-| `{{ONEDRIVE_TEACHING_ROOT}}` | OneDrive teaching-papers root path |
-| `{{IMA_CHEMISTRY_KB}}` | ima chemistry papers knowledge-base name |
-| `{{DEEPSEEK_BOT_ID}}` | DeepSeek Bot agent UUID |
-| `{{XKW_BOT_ID}}` | 学科网试卷Bot agent UUID |
-| `{{KB_PAPERS_BOT_ID}}` | 高三试卷知识库Bot agent UUID |
-| `{{REVIEW_BOT_ID}}` | 阅卷复审Bot agent UUID |
-| `{{INDEX_BOT_ID}}` | 知识库索引Bot agent UUID |
-| `{{GROK_BOT_ID}}` | Grok Bot agent UUID |
+| `{{ONEDRIVE_TEACHING_ROOT}}` | OneDrive 教学试卷根目录 / OneDrive teaching-papers root |
+| `{{IMA_CHEMISTRY_KB}}` | ima 化学试卷知识库名 / ima chemistry papers KB name |
+| `{{GROK_BOT_ID}}` | Grok Bot ID |
+| `{{XKW_BOT_ID}}` | 学科网试卷Bot ID |
+| `{{KB_PAPERS_BOT_ID}}` | 高三试卷知识库Bot ID |
+| `{{INDEX_BOT_ID}}` | 知识库索引Bot ID |
+| `{{REVIEW_BOT_ID}}` | 阅卷复审Bot ID |
+| `{{DEEPSEEK_BOT_ID}}` | DeepSeek Bot ID |
 
-No API keys, passwords, vault exports, or student PII are included.
+## 说明 / Notes
 
-## Layout
-- `bots/` — six bot profiles + avatars
-- `skills/` — custom skills (+ helper scripts)
-- `routines/` — scheduled routine descriptions
+本仓库不含 API Key、密码、保险库导出或学生信息；系统自带 Cursor 技能不在此备份。
+
+No API keys, passwords, vault exports, or student data. Cursor-managed skills are omitted on purpose.
