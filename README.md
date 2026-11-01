@@ -1,14 +1,25 @@
-# Grok Bots 个人备份 / Personal backup
+# Grok Bot fleet backup (light-redacted)
 
-私有工作流备份（小呼 · Asia/Shanghai），截至打包日写入。含：
+Public mirror of profiles, avatars, custom skills, and routine docs.
+**Live bots on the box are unchanged**; only this GitHub copy uses placeholders.
 
-- `bots/`：六个 Bot 的 profile 与头像
-- `skills/`：共享自建技能（含有关脚本等）
-- `routines/`：Grok Bot 定时例程说明
+## Placeholders
+Restore values from your private notes / Grok Bot memory (not stored in this repo):
 
-请勿公开密钥；本仓库不含 API Key。系统自带 Cursor 技能不在此备份。
+| Placeholder | Meaning |
+|---|---|
+| `{{ONEDRIVE_TEACHING_ROOT}}` | OneDrive teaching-papers root path |
+| `{{IMA_CHEMISTRY_KB}}` | ima chemistry papers knowledge-base name |
+| `{{DEEPSEEK_BOT_ID}}` | DeepSeek Bot agent UUID |
+| `{{XKW_BOT_ID}}` | 学科网试卷Bot agent UUID |
+| `{{KB_PAPERS_BOT_ID}}` | 高三试卷知识库Bot agent UUID |
+| `{{REVIEW_BOT_ID}}` | 阅卷复审Bot agent UUID |
+| `{{INDEX_BOT_ID}}` | 知识库索引Bot agent UUID |
+| `{{GROK_BOT_ID}}` | Grok Bot agent UUID |
 
-Private backup of 小呼's Grok Bot fleet. No API keys. Cursor-managed skills are omitted on purpose.
+No API keys, passwords, vault exports, or student PII are included.
 
-<img width="1128" height="785" alt="抱你！" src="https://github.com/user-attachments/assets/afe0e543-af20-4e31-ae1b-6a483a6054f2" />
-<p align="center">谢谢你～</p>
+## Layout
+- `bots/` — six bot profiles + avatars
+- `skills/` — custom skills (+ helper scripts)
+- `routines/` — scheduled routine descriptions

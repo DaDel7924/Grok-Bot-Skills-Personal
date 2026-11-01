@@ -2,26 +2,26 @@
 name: onedrive-ima-add-only-sync
 description: >-
   Use when adding missing senior-year chemistry exam papers from the user’s
-  OneDrive 文档/教案/高考专项 into the ima KB「高三年级化学试卷题库」 for 各校试卷 / 本校考试试卷 /
+  OneDrive {{ONEDRIVE_TEACHING_ROOT}} into the ima KB「{{IMA_CHEMISTRY_KB}}」 for 各校试卷 / 本校考试试卷 /
   日常练习资料—add-only, year folders must match, skip zip/html, report
   near-duplicates; after new uploads notify 知识库索引Bot. Not for 高考真题 import, index
   write-back to ima, deletes, or overwrites.
 ---
 # OneDrive→ima 试卷只增同步
 
-把 OneDrive「文档/教案/高考专项」里缺的卷**只增**同步进 ima「高三年级化学试卷题库」（各校试卷 / 本校考试试卷 / 日常练习资料）。学年文件夹名两边必须一字对齐；永不删、永不覆盖、永不改两侧已有文件，也不改 OneDrive。具体 kb_id、folder_id、OneDrive item id、队友 agent id、API 密钥、以及 OD 顶层文件夹与 ima 三段的精确映射，放记忆/例程/环境变量，不要写进本技能。
+把 OneDrive「{{ONEDRIVE_TEACHING_ROOT}}」里缺的卷**只增**同步进 ima「{{IMA_CHEMISTRY_KB}}」（各校试卷 / 本校考试试卷 / 日常练习资料）。学年文件夹名两边必须一字对齐；永不删、永不覆盖、永不改两侧已有文件，也不改 OneDrive。具体 kb_id、folder_id、OneDrive item id、队友 agent id、API 密钥、以及 OD 顶层文件夹与 ima 三段的精确映射，放记忆/例程/环境变量，不要写进本技能。
 
 可复用本机既有比较/上传脚本思路（如 `/workspace/ima-onedrive-compare/`、`/workspace/ima-import/`），技能正文只写通用步骤。
 
 ## When to use
 
-- 例程周一定时跑，或用户/队友明确要求「把 OneDrive 高考专项缺的卷补进 ima」。
+- 例程周一定时跑，或用户/队友明确要求「把 OneDrive {{ONEDRIVE_TEACHING_ROOT}} 缺的卷补进 ima」。
 - 范围仅 ima 侧三段主题对照（各校 / 本校 / 日常）。
 - **不要**用于：高考真题导入、索引表写回 ima、电子教材整包解压、任意删改覆盖。
 
 ## OneDrive 顶层与 ima 映射（规则，细节在记忆/例程）
 
-高考专项顶层**不是**「各校/本校/日常」三个文件夹，常见顶层是：`学科网试卷获取bot`、`教学补充资料`、`配套练习`（外加 zip）。对照时：
+{{ONEDRIVE_TEACHING_ROOT}} 顶层**不是**「各校/本校/日常」三个文件夹，常见顶层是：`学科网试卷获取bot`、`教学补充资料`、`配套练习`（外加 zip）。对照时：
 
 - `教学补充资料` 内各学期「各校试卷」→ ima「各校试卷」
 - `配套练习` 内「本校考试试卷」→ ima「本校考试试卷」；其下日常/周测等 → ima「日常练习资料」（比对日常时仍**排除**日常树下的本校考试试卷子树；本校段单独比）
@@ -37,7 +37,7 @@ description: >-
 ## Steps
 
 1. **两侧盘点**
-   - OneDrive（personal 连接器）：打开用户资料根下 `文档/教案/高考专项`，按上节映射递归列出对应树。
+   - OneDrive（personal 连接器）：打开用户资料根下 `{{ONEDRIVE_TEACHING_ROOT}}`，按上节映射递归列出对应树。
    - ima：对目标知识库用 OpenAPI `get_knowledge_list` 分页拉全量（`limit`≤50、cursor；`media_type=99` 为文件夹，其 `media_id` 即 `folder_id`）。Base：`https://ima.qq.com/openapi/wiki/v1/`；请求头变量名：`ima-openapi-clientid` / `ima-openapi-apikey`（从环境变量读取，禁止在技能或聊天打印真实值）。
 
 2. **对齐与判新**

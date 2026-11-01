@@ -16,7 +16,7 @@ DeepSeek Bot is a **tool teammate** for other bots, not a standing business bot.
 
 Send to DeepSeek Bot with `SendToAgent`:
 
-- `target_id`: `10e0081a-6f55-4ef9-a865-b5b77f44316a`
+- `target_id`: `{{DEEPSEEK_BOT_ID}}`
 - `priority`: `true` when you need a reply or someone is waiting; `false` for FYI only
 - Keep the message short: goal, constraints, language, and what to return
 - Path (official DeepSeek API, `DEEPSEEK_API_KEY`): **文字 → deepseek-v4-pro**（强制推理档）; **阅卷读图 → deepseek-flash**（百炼 Qwen 仅备用）
