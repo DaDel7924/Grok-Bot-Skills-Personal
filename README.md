@@ -4,6 +4,8 @@
 
 Light-redacted public backup of 小呼's Grok Bot fleet. Live bots are unchanged; only this GitHub copy uses placeholders.
 
+**备份日期 / Backup date:** 2026-11-01（Asia/Shanghai）
+
 ## 内容 / Contents
 
 - `bots/`：六个 Bot 的 profile 与头像 / six bot profiles + avatars
